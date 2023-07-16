@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.ekndev.gaugelibrary.ArcGauge
+        android:id="@+id/speedGauge"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSpeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="@+id/speedGauge"
+        app:layout_constraintEnd_toEndOf="@+id/speedGauge"
+        app:layout_constraintStart_toStartOf="@+id/speedGauge" />
+
+    <com.ekndev.gaugelibrary.ArcGauge
+        android:id="@+id/mainVoltageGauge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/speedGauge"
+        app:layout_constraintTop_toTopOf="@+id/speedGauge" />
+
+    <TextView
+        android:id="@+id/tvMainVoltageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Voltage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/mainVoltageGauge"
+        app:layout_constraintEnd_toEndOf="@+id/mainVoltageGauge"
+        app:layout_constraintStart_toStartOf="@+id/mainVoltageGauge" />
+
+    <com.ekndev.gaugelibrary.ArcGauge
+        android:id="@+id/auxVoltageGauge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvMainVoltageLabel" />
+
+    <TextView
+        android:id="@+id/tvAuxVoltageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AuxVoltage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/auxVoltageGauge"
+        app:layout_constraintEnd_toEndOf="@+id/auxVoltageGauge"
+        app:layout_constraintStart_toStartOf="@+id/auxVoltageGauge" />
+
+    <com.ekndev.gaugelibrary.ArcGauge
+        android:id="@+id/solarCurrentGauge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/speedGauge"
+        app:layout_constraintTop_toTopOf="@+id/speedGauge" />
+
+    <TextView
+        android:id="@+id/tvSolarCurrentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solar Current"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/solarCurrentGauge"
+        app:layout_constraintEnd_toEndOf="@+id/solarCurrentGauge"
+        app:layout_constraintStart_toStartOf="@+id/solarCurrentGauge" />
+
+
+    <com.ekndev.gaugelibrary.ArcGauge
+        android:id="@+id/motorCurrentGauge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSolarCurrentLabel" />
+
+    <TextView
+        android:id="@+id/tvMotorCurrentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor Current"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/motorCurrentGauge"
+        app:layout_constraintEnd_toEndOf="@+id/motorCurrentGauge"
+        app:layout_constraintStart_toStartOf="@+id/motorCurrentGauge" />
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/app_version"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
