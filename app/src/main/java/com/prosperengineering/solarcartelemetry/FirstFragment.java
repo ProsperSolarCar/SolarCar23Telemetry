@@ -65,6 +65,7 @@ public class FirstFragment extends Fragment
                 iRed,
                 iYellow,
                 iGreen);
+        gaugeMainVoltage.setPrecision(2);
 
         gaugeAuxVoltage = (ArcGauge) view.findViewById(R.id.auxVoltageGauge);
         InitArcGauge (gaugeAuxVoltage,
@@ -73,6 +74,7 @@ public class FirstFragment extends Fragment
                 iRed,
                 iYellow,
                 iGreen);
+        gaugeAuxVoltage.setPrecision(2);
 
         gaugeSolarCurrent = (ArcGauge) view.findViewById(R.id.solarCurrentGauge);
         InitArcGauge (gaugeSolarCurrent,
@@ -81,6 +83,7 @@ public class FirstFragment extends Fragment
                 iRed,
                 iYellow,
                 iGreen);
+        gaugeSolarCurrent.setPrecision(2);
 
         gaugeMotorCurrent = (ArcGauge) view.findViewById(R.id.motorCurrentGauge);
         InitArcGauge (gaugeMotorCurrent,
@@ -89,6 +92,7 @@ public class FirstFragment extends Fragment
                 iRed,
                 iYellow,
                 iGreen);
+        gaugeMotorCurrent.setPrecision(2);
 
 
 
